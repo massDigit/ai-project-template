@@ -28,6 +28,18 @@ Inspect **only** the documentation relevant to the current task:
 - **Security & Secrets** ➔ `docs/SECURITY.md`
 - **Testing Strategy** ➔ `docs/TESTING.md`
 - **CI/CD & Deployment** ➔ `docs/DEPLOYMENT.md`
+- **Architecture Decisions (Approved)** ➔ `.ai/DECISIONS.md`
+- **Unconfirmed Hypotheses & Proposals** ➔ `.ai/ASSUMPTIONS.md`
+
+## ⚖️ Decision Classification Rule
+
+Always distinguish between:
+- **USER REQUIREMENT**: Explicitly specified by the user (non-negotiable).
+- **ASSUMPTION**: Technical choice inferred by the agent but not yet validated (placed in `.ai/ASSUMPTIONS.md`).
+- **PROPOSAL**: Architecture option presented to the user for feedback.
+- **VALIDATED DECISION**: Explicitly approved choice by the user (recorded in `.ai/DECISIONS.md`).
+
+> 🚨 **CRITICAL RULE**: Never write an agent proposal into `.ai/DECISIONS.md` as if it were an approved architectural decision. If an architectural choice has not been explicitly approved by the user, mark it as `PROPOSED` and place it in `.ai/ASSUMPTIONS.md`.
 
 ## 🔍 Before Coding
 
@@ -57,5 +69,6 @@ Run the relevant validation commands:
 
 ## 📝 Documentation Maintenance
 
-- **When architecture changes**: Update `docs/ARCHITECTURE.md` and append an entry to `.ai/DECISIONS.md`.
+- **When architecture changes**: Update `docs/ARCHITECTURE.md` and append an entry to `.ai/DECISIONS.md` (only if approved) or `.ai/ASSUMPTIONS.md` (if proposed).
 - **When project state changes**: Update `.ai/STATE.md` and `.ai/TASKS.md`.
+

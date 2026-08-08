@@ -12,15 +12,17 @@ Initialisation de l'architecture IA-Native et rédaction des spécifications dan
 
 ## ✅ Réalisé
 - [x] Arborescence standardisée IA (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md`)
-- [x] Structure de mémoire `.ai/` (Mémoire stable vs État courant)
-- [x] Structure de spécifications `docs/` et compétences `.agents/skills/`
+- [x] Structure de mémoire `.ai/` (`CONTEXT.md`, `STATE.md`, `TASKS.md`, `RULES.md`, `DECISIONS.md`, `ASSUMPTIONS.md`)
+- [x] Skill universal `project-bootstrap` (`.agents/skills/project-bootstrap/SKILL.md`)
+- [x] Règle stricte de classification des décisions & non-usurpation d'ADR (`AGENTS.md`, `RULES.md`)
+- [x] Documentation d'accueil universelle générique (`README.md`)
 
 ## 🔄 En Cours
-- [ ] Remplissage des règles métier dans `docs/BUSINESS_RULES.md`
-- [ ] Configuration de la stack technique dans `docs/STACK.md`
+- [ ] Test d'initialisation de projet réel via le skill `project-bootstrap` (ex: projet Kaze)
 
 ## ⚠️ Problèmes Connus / Points de Vigilance
-- Aucun code source dans `src/` pour le moment.
+- Template universel vierge d'application source (`src/`).
 
 ## 🏁 Prochaine Étape / Milestone
-Valider les spécifications initiales avant d'initier le développement des premiers composants dans `src/`.
+Tester le workflow de bootstrap sur un cas réel (ex: projet Kaze) pour vérifier la génération complète de la documentation sans toucher au code source.
+
